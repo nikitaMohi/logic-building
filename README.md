@@ -14,20 +14,7 @@ Buffer safety: sName holds 30 chars. Prefer %29[^\n] to avoid overflow.
 Java
 next() reads one token (stops at whitespace). With Rahul Sharma, next() returns Rahul, then nextInt() hits Sharma and throws InputMismatchException (see program28.java).
 nextLine() reads the whole line, so it handles names with spaces (program29.java).
-Order matters: nextInt() / nextFloat() leave the newline in the buffer. Calling nextLine() after them returns an empty string. program29.java avoids this by reading the name with nextLine() first.
-Known errors in program27.java (intentional)
-float fMarks = 0.0; needs 0.0f
-iMarks is never declared (should be fMarks)
-System.out.ptintln is a typo for println
-A stray S on its own line
-How to Run
-
-C
-
-bash
-gcc program30.c -o program30
-./program30
-
+Order matters: nextInt() / nextFloat() 
 Java
 
 bash
