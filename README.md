@@ -17,10 +17,3 @@ nextLine() reads the whole line, so it handles names with spaces (program29.java
 Order matters: nextInt() / nextFloat() 
 Java
 
-bash
-javac program29.java
-java program29
-Key Takeaways
-Use %[^\n] (C) or nextLine() (Java) for text with spaces.
-%s and next() read a single word only.
-Numeric reads leave the Enter key in the buffer, so read line-based input first or consume the leftover newline.
