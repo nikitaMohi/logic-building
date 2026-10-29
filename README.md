@@ -13,7 +13,5 @@ Leftover newline: after scanf("%d", &age) the Enter key remains in the buffer. T
 Buffer safety: sName holds 30 chars. Prefer %29[^\n] to avoid overflow.
 Java
 next() reads one token (stops at whitespace). With Rahul Sharma, next() returns Rahul, then nextInt() hits Sharma and throws InputMismatchException (see program28.java).
-nextLine() reads the whole line, so it handles names with spaces (program29.java).
-Order matters: nextInt() / nextFloat() 
-Java
+nextLine() reads the whole line, so it handles names with spaces (program29.java)
 
