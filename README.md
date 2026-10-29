@@ -6,10 +6,7 @@ program25.c	C	Read a name with scanf("%s")
 program26.c	C	Read a name with spaces using scanf("%[^\n]")
 program30.c	C	Read name, age and marks together
 program27.java	Java	Scanner input, contains intentional compile errors
-program28.java	Java	Scanner with next(), nextInt(), nextFloat()
-program29.java	Java	Scanner with nextLine() for a name with spaces
-Logic Summary
-C
+program28.java	Java	Scanner with next(), nextInt(), nextFloat(
 scanf("%s", name) stops at the first whitespace. Input Rahul Sharma stores only Rahul; the rest stays in the input buffer.
 scanf("%[^\n]", name) reads everything until Enter, so full names with spaces work. (program26.c and program30.c write %[^'\n']s; the ' also excludes apostrophes and the trailing s is unnecessary. %[^\n] is enough.)
 Leftover newline: after scanf("%d", &age) the Enter key remains in the buffer. This is harmless before another %d or %f (they skip whitespace) but breaks a following %c or %[^\n] read.
